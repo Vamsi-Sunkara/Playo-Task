@@ -8,9 +8,12 @@
 import Foundation
 
 struct HeadlinesResponseModel: Codable {
-    let status: Int?
+    
+    let status: String?
+    let totalResults: Int?
+    let articles: [HeadLineArticles]?
     
     func toMapperModel() -> HeadlinesMapperModel {
-        return HeadlinesMapperModel(status: self.status)
+        return HeadlinesMapperModel(status: status, totalResults: totalResults, articles: articles)
     }
 }

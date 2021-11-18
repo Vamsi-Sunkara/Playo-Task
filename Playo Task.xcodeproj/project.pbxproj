@@ -24,17 +24,14 @@
 		03155F2A27466A3400210751 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F2927466A3400210751 /* HTTP.swift */; };
 		03155F2F27466C7900210751 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F2E27466C7900210751 /* NetworkManager.swift */; };
 		03155F3B27466D3300210751 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F3A27466D3300210751 /* Alamofire */; };
-		03155F412746708100210751 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F402746708100210751 /* RxSwift */; };
-		03155F432746708100210751 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F422746708100210751 /* RxTest */; };
-		03155F452746708100210751 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F442746708100210751 /* RxRelay */; };
-		03155F472746708100210751 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F462746708100210751 /* RxCocoa */; };
-		03155F492746708100210751 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F482746708100210751 /* RxBlocking */; };
 		03155F5127467CA800210751 /* HeadlinesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F5027467CA800210751 /* HeadlinesRouter.swift */; };
 		03155F6127467CCD00210751 /* HeadlinesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F6027467CCD00210751 /* HeadlinesManager.swift */; };
 		03155F6627467CFD00210751 /* CommonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F6527467CFD00210751 /* CommonManager.swift */; };
 		03155F6B27467DA300210751 /* HeadlinesUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F6A27467DA300210751 /* HeadlinesUsecase.swift */; };
 		03155F7027467E2200210751 /* HeadlinesMapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F6F27467E2200210751 /* HeadlinesMapperModel.swift */; };
 		03155F752746814E00210751 /* HeadlinesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F742746814E00210751 /* HeadlinesResponseModel.swift */; };
+		03155F8A27469AE300210751 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F8927469AE300210751 /* RxCocoa */; };
+		03155F8C27469AE300210751 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F8B27469AE300210751 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,11 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03155F412746708100210751 /* RxSwift in Frameworks */,
-				03155F492746708100210751 /* RxBlocking in Frameworks */,
-				03155F432746708100210751 /* RxTest in Frameworks */,
-				03155F472746708100210751 /* RxCocoa in Frameworks */,
-				03155F452746708100210751 /* RxRelay in Frameworks */,
+				03155F8C27469AE300210751 /* RxSwift in Frameworks */,
+				03155F8A27469AE300210751 /* RxCocoa in Frameworks */,
 				03155F3B27466D3300210751 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,11 +290,8 @@
 			name = "Playo Task";
 			packageProductDependencies = (
 				03155F3A27466D3300210751 /* Alamofire */,
-				03155F402746708100210751 /* RxSwift */,
-				03155F422746708100210751 /* RxTest */,
-				03155F442746708100210751 /* RxRelay */,
-				03155F462746708100210751 /* RxCocoa */,
-				03155F482746708100210751 /* RxBlocking */,
+				03155F8927469AE300210751 /* RxCocoa */,
+				03155F8B27469AE300210751 /* RxSwift */,
 			);
 			productName = "Playo Task";
 			productReference = 03155EC12746596E00210751 /* Playo Task.app */;
@@ -375,7 +366,7 @@
 			mainGroup = 03155EB82746596E00210751;
 			packageReferences = (
 				03155F3927466D3300210751 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				03155F8827469AE300210751 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 03155EC22746596E00210751 /* Products */;
 			projectDirPath = "";
@@ -494,7 +485,7 @@
 		03155EEC2746597000210751 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -555,7 +546,7 @@
 		03155EED2746597000210751 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -613,13 +604,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FX8JKAWML3;
+				DEVELOPMENT_TEAM = VC4MGNUNV9;
 				INFOPLIST_FILE = "Playo Task/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cnx.pushdemo.Playo-Task";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cnx.pushdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -632,13 +623,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FX8JKAWML3;
+				DEVELOPMENT_TEAM = VC4MGNUNV9;
 				INFOPLIST_FILE = "Playo Task/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cnx.pushdemo.Playo-Task";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cnx.pushdemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -779,7 +770,7 @@
 				minimumVersion = 5.4.4;
 			};
 		};
-		03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		03155F8827469AE300210751 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift";
 			requirement = {
@@ -795,30 +786,15 @@
 			package = 03155F3927466D3300210751 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		03155F402746708100210751 /* RxSwift */ = {
+		03155F8927469AE300210751 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
-		};
-		03155F422746708100210751 /* RxTest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxTest;
-		};
-		03155F442746708100210751 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		03155F462746708100210751 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = 03155F8827469AE300210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		03155F482746708100210751 /* RxBlocking */ = {
+		03155F8B27469AE300210751 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxBlocking;
+			package = 03155F8827469AE300210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 

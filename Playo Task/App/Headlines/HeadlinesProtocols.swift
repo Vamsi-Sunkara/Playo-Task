@@ -9,7 +9,8 @@ import Foundation
 
 //MARK:- View Protocols
 protocol HeadlinesViewType {
-    
+    func loadTableViewData()
+    func displayError()
 }
 
 //MARK:- ViewModel Protocols

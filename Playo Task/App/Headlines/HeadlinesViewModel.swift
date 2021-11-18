@@ -7,6 +7,7 @@
 
 import Foundation
 import RxSwift
+import ProgressHUD
 
 class HeadlinesViewModel:  HeadlinesViewModelType {
 
@@ -29,9 +30,12 @@ class HeadlinesViewModel:  HeadlinesViewModelType {
         let request : [String: Any] = [:]
         let additionalQuery: [String: String] = [:]
         
+        ProgressHUD.animationType = .multipleCircleScaleRipple
+        ProgressHUD.show()
         headlinesManager.getHeadlines(request: request, additionalQuery: additionalQuery)
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (response) in
+                ProgressHUD.dismiss()
                 guard let `self` = self, let view = self.headlinesView else {return}
                 self.headlinesMapperModel = response
                 view.loadTableViewData()

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import WebKit
+import ProgressHUD
 
 class WebviewViewController: UIViewController, WebviewViewType {
     
@@ -19,6 +20,11 @@ class WebviewViewController: UIViewController, WebviewViewType {
         super.viewDidLoad()
         //MARK:- Attaching View with ViewModel
         viewModel?.attach(view: self)
+        initialSetup()
+    }
+    
+    func initialSetup() {
+        webView.navigationDelegate = self
         addBackButton()
         loadUrl()
     }
@@ -48,13 +54,17 @@ extension WebviewViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         //MARK:- will call after Url failed loading
+        ProgressHUD.dismiss()
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         //MARK:- will call after every Url started loading
+        ProgressHUD.animationType = .circleRotateChase
+        ProgressHUD.show()
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         //MARK:- will call after every Url finished loading
+        ProgressHUD.dismiss()
     }
 }

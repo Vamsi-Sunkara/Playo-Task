@@ -73,8 +73,6 @@ extension HeadlinesViewController {
     }
     
     func navigateToWebView(urlString: String) {
-//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "WebviewViewController") as! WebviewViewController
         viewController.viewModel?.urlString = urlString
         
@@ -82,6 +80,5 @@ extension HeadlinesViewController {
         navController.modalPresentationStyle = .fullScreen
         self.present(navController, animated: true)
         
-//        viewController.navigationController?.pushViewController(viewController, animated: true)
     }
 }

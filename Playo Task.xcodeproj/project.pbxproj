@@ -35,6 +35,7 @@
 		03155F9B2746CAFB00210751 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F9A2746CAFB00210751 /* WebviewViewController.swift */; };
 		03155FA62746CB1C00210751 /* WebviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155FA52746CB1C00210751 /* WebviewViewModel.swift */; };
 		03155FAB2746CDCB00210751 /* WebviewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155FAA2746CDCB00210751 /* WebviewProtocols.swift */; };
+		03155FB12746D96100210751 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 03155FB02746D96100210751 /* ProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03155F8C27469AE300210751 /* RxSwift in Frameworks */,
+				03155FB12746D96100210751 /* ProgressHUD in Frameworks */,
 				03155F8A27469AE300210751 /* RxCocoa in Frameworks */,
 				03155F3B27466D3300210751 /* Alamofire in Frameworks */,
 			);
@@ -309,6 +311,7 @@
 				03155F3A27466D3300210751 /* Alamofire */,
 				03155F8927469AE300210751 /* RxCocoa */,
 				03155F8B27469AE300210751 /* RxSwift */,
+				03155FB02746D96100210751 /* ProgressHUD */,
 			);
 			productName = "Playo Task";
 			productReference = 03155EC12746596E00210751 /* Playo Task.app */;
@@ -384,6 +387,7 @@
 			packageReferences = (
 				03155F3927466D3300210751 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				03155F8827469AE300210751 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				03155FAF2746D96100210751 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = 03155EC22746596E00210751 /* Products */;
 			projectDirPath = "";
@@ -798,6 +802,14 @@
 				minimumVersion = 6.2.0;
 			};
 		};
+		03155FAF2746D96100210751 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 13.6.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -815,6 +827,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 03155F8827469AE300210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		03155FB02746D96100210751 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03155FAF2746D96100210751 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 

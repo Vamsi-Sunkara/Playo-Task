@@ -19,6 +19,7 @@ class HeadlinesViewController: UIViewController, HeadlinesViewType {
         //MARK:- Attaching View with ViewModel
         viewModel?.attach(view: self)
         configureTableView()
+        addRefresh()
     }
     
     func configureTableView() {
@@ -28,6 +29,22 @@ class HeadlinesViewController: UIViewController, HeadlinesViewType {
         headLinesTableView.backgroundColor = #colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 1)
         
         headLinesTableView.register(UINib(nibName: NewsTableViewCell.cellIdentiier, bundle: nil), forCellReuseIdentifier: NewsTableViewCell.cellIdentiier)
+    }
+    
+    func addRefresh() {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
+
+        if #available(iOS 10.0, *) {
+            headLinesTableView.refreshControl = refreshControl
+        } else {
+            headLinesTableView.backgroundView = refreshControl
+        }
+    }
+
+    @objc func refresh(_ refreshControl: UIRefreshControl) {
+        self.viewModel?.getHeadlines()
+        refreshControl.endRefreshing()
     }
 
 }

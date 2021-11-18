@@ -12,6 +12,7 @@ class HeadlinesViewModel:  HeadlinesViewModelType {
 
     private var headlinesView: HeadlinesViewType?
     private let headlinesManager: HeadlinesUsecase
+    var headlinesMapperModel: HeadlinesMapperModel?
     
     lazy var disposeBag = DisposeBag()
     
@@ -25,7 +26,6 @@ class HeadlinesViewModel:  HeadlinesViewModelType {
     }
     
     func getHeadlines() {
-        
         let request : [String: Any] = [:]
         let additionalQuery: [String: String] = [:]
         
@@ -33,11 +33,20 @@ class HeadlinesViewModel:  HeadlinesViewModelType {
             .observe(on: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (response) in
                 guard let `self` = self, let view = self.headlinesView else {return}
+                self.headlinesMapperModel = response
                 view.loadTableViewData()
             }, onError: { [weak self] (error) in
                 guard let self = self, let view = self.headlinesView else {return}
                 view.displayError()
             }).disposed(by: disposeBag)
+    }
+    
+    func headlineSelected(index: Int) {
+        guard let selectedArticle = headlinesMapperModel?.articles[index] else {
+            return
+        }
+        print(selectedArticle)
+        
     }
 
 }

@@ -10,7 +10,7 @@ import Foundation
 struct HeadlinesMapperModel: Codable {
     let status: String?
     let totalResults: Int?
-    let articles: [HeadLineArticles]?
+    let articles: [HeadLineArticles]
 }
 
 

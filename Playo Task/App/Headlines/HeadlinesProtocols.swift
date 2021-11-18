@@ -16,6 +16,7 @@ protocol HeadlinesViewType {
 //MARK:- ViewModel Protocols
 protocol HeadlinesViewModelType {
     func attach(view: HeadlinesViewType)
-    
+    var headlinesMapperModel: HeadlinesMapperModel? {get set}
+    func headlineSelected(index: Int)
 }
 

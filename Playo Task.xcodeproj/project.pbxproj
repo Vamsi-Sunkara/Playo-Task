@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		03155EC52746596E00210751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EC42746596E00210751 /* AppDelegate.swift */; };
 		03155EC72746596E00210751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EC62746596E00210751 /* SceneDelegate.swift */; };
-		03155EC92746596E00210751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EC82746596E00210751 /* ViewController.swift */; };
 		03155ECC2746596E00210751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03155ECA2746596E00210751 /* Main.storyboard */; };
 		03155ECF2746596E00210751 /* Playo_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03155ECD2746596E00210751 /* Playo_Task.xcdatamodeld */; };
 		03155ED12746597000210751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03155ED02746597000210751 /* Assets.xcassets */; };
 		03155ED42746597000210751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03155ED22746597000210751 /* LaunchScreen.storyboard */; };
 		03155EDF2746597000210751 /* Playo_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EDE2746597000210751 /* Playo_TaskTests.swift */; };
 		03155EEA2746597000210751 /* Playo_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EE92746597000210751 /* Playo_TaskUITests.swift */; };
+		03155EFB27465BA400210751 /* HeadlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EFA27465BA400210751 /* HeadlinesViewController.swift */; };
+		03155F0127465C2900210751 /* HeadlinesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F0027465C2900210751 /* HeadlinesViewModel.swift */; };
+		03155F0927465C3E00210751 /* HeadlinesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F0827465C3E00210751 /* HeadlinesProtocols.swift */; };
+		03155F1327465EDB00210751 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F1127465EDB00210751 /* NewsTableViewCell.swift */; };
+		03155F1427465EDB00210751 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03155F1227465EDB00210751 /* NewsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		03155EC12746596E00210751 /* Playo Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playo Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03155EC42746596E00210751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03155EC62746596E00210751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03155EC82746596E00210751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		03155ECB2746596E00210751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03155ECE2746596E00210751 /* Playo_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Playo_Task.xcdatamodel; sourceTree = "<group>"; };
 		03155ED02746597000210751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +54,11 @@
 		03155EE52746597000210751 /* Playo TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Playo TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03155EE92746597000210751 /* Playo_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playo_TaskUITests.swift; sourceTree = "<group>"; };
 		03155EEB2746597000210751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03155EFA27465BA400210751 /* HeadlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesViewController.swift; sourceTree = "<group>"; };
+		03155F0027465C2900210751 /* HeadlinesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesViewModel.swift; sourceTree = "<group>"; };
+		03155F0827465C3E00210751 /* HeadlinesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesProtocols.swift; sourceTree = "<group>"; };
+		03155F1127465EDB00210751 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		03155F1227465EDB00210751 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,7 @@
 			children = (
 				03155EC42746596E00210751 /* AppDelegate.swift */,
 				03155EC62746596E00210751 /* SceneDelegate.swift */,
-				03155EC82746596E00210751 /* ViewController.swift */,
+				03155EFF27465C0B00210751 /* Headlines */,
 				03155ECA2746596E00210751 /* Main.storyboard */,
 				03155ED02746597000210751 /* Assets.xcassets */,
 				03155ED22746597000210751 /* LaunchScreen.storyboard */,
@@ -129,6 +137,26 @@
 				03155EEB2746597000210751 /* Info.plist */,
 			);
 			path = "Playo TaskUITests";
+			sourceTree = "<group>";
+		};
+		03155EFF27465C0B00210751 /* Headlines */ = {
+			isa = PBXGroup;
+			children = (
+				03155F1027465EA500210751 /* News Cell */,
+				03155EFA27465BA400210751 /* HeadlinesViewController.swift */,
+				03155F0027465C2900210751 /* HeadlinesViewModel.swift */,
+				03155F0827465C3E00210751 /* HeadlinesProtocols.swift */,
+			);
+			path = Headlines;
+			sourceTree = "<group>";
+		};
+		03155F1027465EA500210751 /* News Cell */ = {
+			isa = PBXGroup;
+			children = (
+				03155F1127465EDB00210751 /* NewsTableViewCell.swift */,
+				03155F1227465EDB00210751 /* NewsTableViewCell.xib */,
+			);
+			path = "News Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +264,7 @@
 			files = (
 				03155ED42746597000210751 /* LaunchScreen.storyboard in Resources */,
 				03155ED12746597000210751 /* Assets.xcassets in Resources */,
+				03155F1427465EDB00210751 /* NewsTableViewCell.xib in Resources */,
 				03155ECC2746596E00210751 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,9 +290,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03155EC92746596E00210751 /* ViewController.swift in Sources */,
+				03155EFB27465BA400210751 /* HeadlinesViewController.swift in Sources */,
+				03155F1327465EDB00210751 /* NewsTableViewCell.swift in Sources */,
+				03155F0927465C3E00210751 /* HeadlinesProtocols.swift in Sources */,
 				03155EC52746596E00210751 /* AppDelegate.swift in Sources */,
 				03155ECF2746596E00210751 /* Playo_Task.xcdatamodeld in Sources */,
+				03155F0127465C2900210751 /* HeadlinesViewModel.swift in Sources */,
 				03155EC72746596E00210751 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

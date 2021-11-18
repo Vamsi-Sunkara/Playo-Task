@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03155EC52746596E00210751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EC42746596E00210751 /* AppDelegate.swift */; };
+		03155EC72746596E00210751 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EC62746596E00210751 /* SceneDelegate.swift */; };
+		03155EC92746596E00210751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EC82746596E00210751 /* ViewController.swift */; };
+		03155ECC2746596E00210751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03155ECA2746596E00210751 /* Main.storyboard */; };
+		03155ECF2746596E00210751 /* Playo_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03155ECD2746596E00210751 /* Playo_Task.xcdatamodeld */; };
+		03155ED12746597000210751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03155ED02746597000210751 /* Assets.xcassets */; };
+		03155ED42746597000210751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03155ED22746597000210751 /* LaunchScreen.storyboard */; };
+		03155EDF2746597000210751 /* Playo_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EDE2746597000210751 /* Playo_TaskTests.swift */; };
+		03155EEA2746597000210751 /* Playo_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155EE92746597000210751 /* Playo_TaskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03155EDB2746597000210751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03155EB92746596E00210751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03155EC02746596E00210751;
+			remoteInfo = "Playo Task";
+		};
+		03155EE62746597000210751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03155EB92746596E00210751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03155EC02746596E00210751;
+			remoteInfo = "Playo Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03155EC12746596E00210751 /* Playo Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playo Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03155EC42746596E00210751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03155EC62746596E00210751 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		03155EC82746596E00210751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03155ECB2746596E00210751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03155ECE2746596E00210751 /* Playo_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Playo_Task.xcdatamodel; sourceTree = "<group>"; };
+		03155ED02746597000210751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03155ED32746597000210751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03155ED52746597000210751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03155EDA2746597000210751 /* Playo TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Playo TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03155EDE2746597000210751 /* Playo_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playo_TaskTests.swift; sourceTree = "<group>"; };
+		03155EE02746597000210751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03155EE52746597000210751 /* Playo TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Playo TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03155EE92746597000210751 /* Playo_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playo_TaskUITests.swift; sourceTree = "<group>"; };
+		03155EEB2746597000210751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03155EBE2746596E00210751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03155ED72746597000210751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03155EE22746597000210751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03155EB82746596E00210751 = {
+			isa = PBXGroup;
+			children = (
+				03155EC32746596E00210751 /* Playo Task */,
+				03155EDD2746597000210751 /* Playo TaskTests */,
+				03155EE82746597000210751 /* Playo TaskUITests */,
+				03155EC22746596E00210751 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03155EC22746596E00210751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03155EC12746596E00210751 /* Playo Task.app */,
+				03155EDA2746597000210751 /* Playo TaskTests.xctest */,
+				03155EE52746597000210751 /* Playo TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03155EC32746596E00210751 /* Playo Task */ = {
+			isa = PBXGroup;
+			children = (
+				03155EC42746596E00210751 /* AppDelegate.swift */,
+				03155EC62746596E00210751 /* SceneDelegate.swift */,
+				03155EC82746596E00210751 /* ViewController.swift */,
+				03155ECA2746596E00210751 /* Main.storyboard */,
+				03155ED02746597000210751 /* Assets.xcassets */,
+				03155ED22746597000210751 /* LaunchScreen.storyboard */,
+				03155ED52746597000210751 /* Info.plist */,
+				03155ECD2746596E00210751 /* Playo_Task.xcdatamodeld */,
+			);
+			path = "Playo Task";
+			sourceTree = "<group>";
+		};
+		03155EDD2746597000210751 /* Playo TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				03155EDE2746597000210751 /* Playo_TaskTests.swift */,
+				03155EE02746597000210751 /* Info.plist */,
+			);
+			path = "Playo TaskTests";
+			sourceTree = "<group>";
+		};
+		03155EE82746597000210751 /* Playo TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03155EE92746597000210751 /* Playo_TaskUITests.swift */,
+				03155EEB2746597000210751 /* Info.plist */,
+			);
+			path = "Playo TaskUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03155EC02746596E00210751 /* Playo Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03155EEE2746597000210751 /* Build configuration list for PBXNativeTarget "Playo Task" */;
+			buildPhases = (
+				03155EBD2746596E00210751 /* Sources */,
+				03155EBE2746596E00210751 /* Frameworks */,
+				03155EBF2746596E00210751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Playo Task";
+			productName = "Playo Task";
+			productReference = 03155EC12746596E00210751 /* Playo Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03155ED92746597000210751 /* Playo TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03155EF12746597000210751 /* Build configuration list for PBXNativeTarget "Playo TaskTests" */;
+			buildPhases = (
+				03155ED62746597000210751 /* Sources */,
+				03155ED72746597000210751 /* Frameworks */,
+				03155ED82746597000210751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03155EDC2746597000210751 /* PBXTargetDependency */,
+			);
+			name = "Playo TaskTests";
+			productName = "Playo TaskTests";
+			productReference = 03155EDA2746597000210751 /* Playo TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03155EE42746597000210751 /* Playo TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03155EF42746597000210751 /* Build configuration list for PBXNativeTarget "Playo TaskUITests" */;
+			buildPhases = (
+				03155EE12746597000210751 /* Sources */,
+				03155EE22746597000210751 /* Frameworks */,
+				03155EE32746597000210751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03155EE72746597000210751 /* PBXTargetDependency */,
+			);
+			name = "Playo TaskUITests";
+			productName = "Playo TaskUITests";
+			productReference = 03155EE52746597000210751 /* Playo TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03155EB92746596E00210751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					03155EC02746596E00210751 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					03155ED92746597000210751 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 03155EC02746596E00210751;
+					};
+					03155EE42746597000210751 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 03155EC02746596E00210751;
+					};
+				};
+			};
+			buildConfigurationList = 03155EBC2746596E00210751 /* Build configuration list for PBXProject "Playo Task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03155EB82746596E00210751;
+			productRefGroup = 03155EC22746596E00210751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03155EC02746596E00210751 /* Playo Task */,
+				03155ED92746597000210751 /* Playo TaskTests */,
+				03155EE42746597000210751 /* Playo TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03155EBF2746596E00210751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03155ED42746597000210751 /* LaunchScreen.storyboard in Resources */,
+				03155ED12746597000210751 /* Assets.xcassets in Resources */,
+				03155ECC2746596E00210751 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03155ED82746597000210751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03155EE32746597000210751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03155EBD2746596E00210751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03155EC92746596E00210751 /* ViewController.swift in Sources */,
+				03155EC52746596E00210751 /* AppDelegate.swift in Sources */,
+				03155ECF2746596E00210751 /* Playo_Task.xcdatamodeld in Sources */,
+				03155EC72746596E00210751 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03155ED62746597000210751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03155EDF2746597000210751 /* Playo_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03155EE12746597000210751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03155EEA2746597000210751 /* Playo_TaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03155EDC2746597000210751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03155EC02746596E00210751 /* Playo Task */;
+			targetProxy = 03155EDB2746597000210751 /* PBXContainerItemProxy */;
+		};
+		03155EE72746597000210751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03155EC02746596E00210751 /* Playo Task */;
+			targetProxy = 03155EE62746597000210751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03155ECA2746596E00210751 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03155ECB2746596E00210751 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03155ED22746597000210751 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03155ED32746597000210751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03155EEC2746597000210751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03155EED2746597000210751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03155EEF2746597000210751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JKAWML3;
+				INFOPLIST_FILE = "Playo Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnx.pushdemo.Playo-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03155EF02746597000210751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JKAWML3;
+				INFOPLIST_FILE = "Playo Task/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnx.pushdemo.Playo-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03155EF22746597000210751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JKAWML3;
+				INFOPLIST_FILE = "Playo TaskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnx.pushdemo.Playo-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playo Task.app/Playo Task";
+			};
+			name = Debug;
+		};
+		03155EF32746597000210751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JKAWML3;
+				INFOPLIST_FILE = "Playo TaskTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnx.pushdemo.Playo-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playo Task.app/Playo Task";
+			};
+			name = Release;
+		};
+		03155EF52746597000210751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JKAWML3;
+				INFOPLIST_FILE = "Playo TaskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnx.pushdemo.Playo-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Playo Task";
+			};
+			name = Debug;
+		};
+		03155EF62746597000210751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FX8JKAWML3;
+				INFOPLIST_FILE = "Playo TaskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cnx.pushdemo.Playo-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Playo Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03155EBC2746596E00210751 /* Build configuration list for PBXProject "Playo Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03155EEC2746597000210751 /* Debug */,
+				03155EED2746597000210751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03155EEE2746597000210751 /* Build configuration list for PBXNativeTarget "Playo Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03155EEF2746597000210751 /* Debug */,
+				03155EF02746597000210751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03155EF12746597000210751 /* Build configuration list for PBXNativeTarget "Playo TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03155EF22746597000210751 /* Debug */,
+				03155EF32746597000210751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03155EF42746597000210751 /* Build configuration list for PBXNativeTarget "Playo TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03155EF52746597000210751 /* Debug */,
+				03155EF62746597000210751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03155ECD2746596E00210751 /* Playo_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03155ECE2746596E00210751 /* Playo_Task.xcdatamodel */,
+			);
+			currentVersion = 03155ECE2746596E00210751 /* Playo_Task.xcdatamodel */;
+			path = Playo_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 03155EB92746596E00210751 /* Project object */;
+}

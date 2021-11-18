@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import RxSwift
 
 class HeadlinesViewController: UIViewController, HeadlinesViewType {
     
@@ -29,16 +28,6 @@ class HeadlinesViewController: UIViewController, HeadlinesViewType {
         headLinesTableView.backgroundColor = #colorLiteral(red: 0.1298420429, green: 0.1298461258, blue: 0.1298439503, alpha: 1)
         
         headLinesTableView.register(UINib(nibName: NewsTableViewCell.cellIdentiier, bundle: nil), forCellReuseIdentifier: NewsTableViewCell.cellIdentiier)
-    }
-    
-    func loadTableViewData() {
-        headLinesTableView.reloadData()
-    }
-    
-    func displayError() {
-        let alert = UIAlertController(title: "Error", message: "We have a error while getting response", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
     }
 
 }
@@ -67,5 +56,32 @@ extension HeadlinesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel?.headlineSelected(index: indexPath.row)
+    }
+}
+
+
+extension HeadlinesViewController {
+    
+    func loadTableViewData() {
+        headLinesTableView.reloadData()
+    }
+    
+    func displayError() {
+        let alert = UIAlertController(title: "Error", message: "We have an error while getting response", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func navigateToWebView(urlString: String) {
+//        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let viewController = self.storyboard?.instantiateViewController(withIdentifier: "WebviewViewController") as! WebviewViewController
+        viewController.viewModel?.urlString = urlString
+        
+        let navController = UINavigationController(rootViewController: viewController)
+        navController.modalPresentationStyle = .fullScreen
+        self.present(navController, animated: true)
+        
+//        viewController.navigationController?.pushViewController(viewController, animated: true)
     }
 }

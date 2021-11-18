@@ -32,6 +32,9 @@
 		03155F752746814E00210751 /* HeadlinesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F742746814E00210751 /* HeadlinesResponseModel.swift */; };
 		03155F8A27469AE300210751 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F8927469AE300210751 /* RxCocoa */; };
 		03155F8C27469AE300210751 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F8B27469AE300210751 /* RxSwift */; };
+		03155F9B2746CAFB00210751 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F9A2746CAFB00210751 /* WebviewViewController.swift */; };
+		03155FA62746CB1C00210751 /* WebviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155FA52746CB1C00210751 /* WebviewViewModel.swift */; };
+		03155FAB2746CDCB00210751 /* WebviewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155FAA2746CDCB00210751 /* WebviewProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		03155F6A27467DA300210751 /* HeadlinesUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesUsecase.swift; sourceTree = "<group>"; };
 		03155F6F27467E2200210751 /* HeadlinesMapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesMapperModel.swift; sourceTree = "<group>"; };
 		03155F742746814E00210751 /* HeadlinesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesResponseModel.swift; sourceTree = "<group>"; };
+		03155F9A2746CAFB00210751 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
+		03155FA52746CB1C00210751 /* WebviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewModel.swift; sourceTree = "<group>"; };
+		03155FAA2746CDCB00210751 /* WebviewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +196,7 @@
 			children = (
 				03155ECA2746596E00210751 /* Main.storyboard */,
 				03155EFF27465C0B00210751 /* Headlines */,
+				03155F992746CAC100210751 /* Webview */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -270,6 +277,16 @@
 				03155F5027467CA800210751 /* HeadlinesRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		03155F992746CAC100210751 /* Webview */ = {
+			isa = PBXGroup;
+			children = (
+				03155F9A2746CAFB00210751 /* WebviewViewController.swift */,
+				03155FA52746CB1C00210751 /* WebviewViewModel.swift */,
+				03155FAA2746CDCB00210751 /* WebviewProtocols.swift */,
+			);
+			path = Webview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,14 +434,17 @@
 				03155F6627467CFD00210751 /* CommonManager.swift in Sources */,
 				03155F6127467CCD00210751 /* HeadlinesManager.swift in Sources */,
 				03155F752746814E00210751 /* HeadlinesResponseModel.swift in Sources */,
+				03155F9B2746CAFB00210751 /* WebviewViewController.swift in Sources */,
 				03155EFB27465BA400210751 /* HeadlinesViewController.swift in Sources */,
 				03155F2F27466C7900210751 /* NetworkManager.swift in Sources */,
 				03155F1327465EDB00210751 /* NewsTableViewCell.swift in Sources */,
 				03155F7027467E2200210751 /* HeadlinesMapperModel.swift in Sources */,
 				03155F5127467CA800210751 /* HeadlinesRouter.swift in Sources */,
+				03155FAB2746CDCB00210751 /* WebviewProtocols.swift in Sources */,
 				03155F0927465C3E00210751 /* HeadlinesProtocols.swift in Sources */,
 				03155EC52746596E00210751 /* AppDelegate.swift in Sources */,
 				03155ECF2746596E00210751 /* Playo_Task.xcdatamodeld in Sources */,
+				03155FA62746CB1C00210751 /* WebviewViewModel.swift in Sources */,
 				03155F0127465C2900210751 /* HeadlinesViewModel.swift in Sources */,
 				03155F252746692100210751 /* API.swift in Sources */,
 				03155EC72746596E00210751 /* SceneDelegate.swift in Sources */,

@@ -11,6 +11,7 @@ import Foundation
 protocol HeadlinesViewType {
     func loadTableViewData()
     func displayError()
+    func navigateToWebView(urlString: String)
 }
 
 //MARK:- ViewModel Protocols

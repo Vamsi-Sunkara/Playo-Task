@@ -42,11 +42,11 @@ class HeadlinesViewModel:  HeadlinesViewModelType {
     }
     
     func headlineSelected(index: Int) {
-        guard let selectedArticle = headlinesMapperModel?.articles[index] else {
+        guard let selectedArticle = headlinesMapperModel?.articles[index], let naviagteToURL = selectedArticle.url, let view = self.headlinesView else {
             return
         }
-        print(selectedArticle)
         
+        view.navigateToWebView(urlString: naviagteToURL)
     }
 
 }

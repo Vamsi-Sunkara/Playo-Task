@@ -38,6 +38,40 @@
             </objects>
             <point key="canvasLocation" x="88" y="119"/>
         </scene>
+        <!--Webview View Controller-->
+        <scene sceneID="h1M-Tt-73e">
+            <objects>
+                <viewController storyboardIdentifier="WebviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rYd-Oq-uyh" customClass="WebviewViewController" customModule="Playo_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHI-nm-SfO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98n-bK-Ivn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vqO-v2-u5t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vqO-v2-u5t" firstAttribute="trailing" secondItem="98n-bK-Ivn" secondAttribute="trailing" id="U0t-zq-CdG"/>
+                            <constraint firstItem="98n-bK-Ivn" firstAttribute="leading" secondItem="vqO-v2-u5t" secondAttribute="leading" id="c1k-yf-dwn"/>
+                            <constraint firstItem="98n-bK-Ivn" firstAttribute="top" secondItem="vqO-v2-u5t" secondAttribute="top" id="gbw-m0-NF2"/>
+                            <constraint firstItem="vqO-v2-u5t" firstAttribute="bottom" secondItem="98n-bK-Ivn" secondAttribute="bottom" id="jSt-Pf-k96"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="98n-bK-Ivn" id="SLq-Pt-uDu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="486-X7-m9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.63768115942037" y="118.52678571428571"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

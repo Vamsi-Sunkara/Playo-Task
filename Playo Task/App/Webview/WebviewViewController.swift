@@ -60,7 +60,7 @@ extension WebviewViewController: WKNavigationDelegate {
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        //MARK:- will call after every Url started loading
+        //MARK:- will call after every Url started loading also used different loader instead of first one
         ProgressHUD.animationType = .circleRotateChase
         ProgressHUD.show()
     }

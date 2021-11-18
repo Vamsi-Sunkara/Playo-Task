@@ -65,6 +65,7 @@ extension HeadlinesViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.cellIdentiier, for: indexPath) as! NewsTableViewCell
         if let articles = viewModel?.headlinesMapperModel?.articles {
             cell.headline = articles[indexPath.row]
+            cell.displayImage = viewModel?.healineImagesList[indexPath.row]
         }
         return cell
     }

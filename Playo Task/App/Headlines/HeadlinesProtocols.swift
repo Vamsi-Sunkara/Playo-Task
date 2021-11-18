@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 //MARK:- View Protocols
 protocol HeadlinesViewType {
@@ -17,7 +18,8 @@ protocol HeadlinesViewType {
 //MARK:- ViewModel Protocols
 protocol HeadlinesViewModelType {
     func attach(view: HeadlinesViewType)
-    var headlinesMapperModel: HeadlinesMapperModel? {get set}
+    var headlinesMapperModel: HeadlinesMapperModel? { get set }
+    var healineImagesList: [UIImage] { get set }
     func headlineSelected(index: Int)
     func getHeadlines()
 }

@@ -50,7 +50,7 @@ extension API {
             }
         }
     
-        print(urlRequest)
+        debugPrint("Request URL:-", urlRequest)
         
         return urlRequest
     }

@@ -29,6 +29,7 @@ class WebviewViewController: UIViewController, WebviewViewType {
         loadUrl()
     }
     
+    //MARK:- Method to add back or cancel button
     func addBackButton() {
         let backButton = UIButton(type: .custom)
         backButton.setImage(UIImage(named: "close_button"), for: .normal)
@@ -41,6 +42,7 @@ class WebviewViewController: UIViewController, WebviewViewType {
         let _ = self.dismiss(animated: true, completion: nil)
     }
     
+    //MARK:- Method to load URL to WebView
     func loadUrl() {
         if let urlString = viewModel?.urlString, let url = URL(string: urlString) {
             let request = URLRequest(url: url)
@@ -49,7 +51,7 @@ class WebviewViewController: UIViewController, WebviewViewType {
     }
 }
 
-
+//MARK:- WebView Delegate Methods
 extension WebviewViewController: WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {

@@ -22,6 +22,7 @@ class HeadlinesViewController: UIViewController, HeadlinesViewType {
         addRefresh()
     }
     
+    //MARK:- Method to configure TableView
     func configureTableView() {
         
         headLinesTableView.delegate = self
@@ -31,6 +32,7 @@ class HeadlinesViewController: UIViewController, HeadlinesViewType {
         headLinesTableView.register(UINib(nibName: NewsTableViewCell.cellIdentiier, bundle: nil), forCellReuseIdentifier: NewsTableViewCell.cellIdentiier)
     }
     
+    //MARK:- Method to add refresh when tableview pull down
     func addRefresh() {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
@@ -49,6 +51,7 @@ class HeadlinesViewController: UIViewController, HeadlinesViewType {
 
 }
 
+//MARK:- UITableViewDelegate Methods
 extension HeadlinesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -66,7 +69,6 @@ extension HeadlinesViewController: UITableViewDataSource {
         return cell
     }
     
-    
 }
 
 extension HeadlinesViewController: UITableViewDelegate {
@@ -83,12 +85,14 @@ extension HeadlinesViewController {
         headLinesTableView.reloadData()
     }
     
+    //MARK:- Method to display an error alert
     func displayError() {
         let alert = UIAlertController(title: "Error", message: "We have an error while getting response", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     
+    //MARK:- Navigating to Web View on selection of Cell
     func navigateToWebView(urlString: String) {
         let viewController = self.storyboard?.instantiateViewController(withIdentifier: "WebviewViewController") as! WebviewViewController
         viewController.viewModel?.urlString = urlString

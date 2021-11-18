@@ -30,7 +30,7 @@ class NewsTableViewCell: UITableViewCell {
                 titleLabel.text = headlineData.title
                 authorLabel.text = headlineData.author
                 descriptionLabel.text = headlineData.description
-                
+                //MARK:- Making Image from Image URL
                 var headlinesImage: UIImage?
                 let url = URL(string: headlineData.urlToImage ?? "") ?? nil
                 if let data = try? Data(contentsOf: url!) {

@@ -17,12 +17,14 @@ class NetworkManager {
         
         return Observable<T>.create { observer in
             
+            //MARK:- Checking for Network availablity
             if !NetworkState.isConnected() {
                 observer.onError(RequestError.connectionError)
             }
                             
+            //MARK:- Making Reuest and getting Response
             let request = AF.request(urlRequest).responseDecodable(of: T.self) { (response) in
-                
+                debugPrint("Response:-", response)
                 switch response.result {
                 case .success(let result):
                     observer.onNext(result)
@@ -32,7 +34,6 @@ class NetworkManager {
                 }
             }
             
-            //Finally, we return a disposable to stop the request
             return Disposables.create {
                 request.cancel()
             }
@@ -47,6 +48,7 @@ class NetworkState {
     }
 }
 
+//MARK:- Making Request and getting Response
 enum RequestError: Error {
     case unknownError
     case connectionError

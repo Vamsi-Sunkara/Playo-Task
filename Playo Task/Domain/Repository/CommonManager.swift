@@ -12,7 +12,7 @@ class CommonManager: API {
     let domain: String
     
     init() {
-        // Base URL
+        //MARK:- Base URL
         domain = "https://newsapi.org/v2/top-headlines?"
     }
 }

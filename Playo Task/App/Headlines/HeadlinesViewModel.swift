@@ -11,21 +11,25 @@ import ProgressHUD
 
 class HeadlinesViewModel:  HeadlinesViewModelType {
 
+    //MARK:- Variables & Properties
     private var headlinesView: HeadlinesViewType?
     private let headlinesManager: HeadlinesUsecase
     var headlinesMapperModel: HeadlinesMapperModel?
     
     lazy var disposeBag = DisposeBag()
     
+    //MARK:- Initializing Usecase
     init(manager: HeadlinesUsecase) {
         headlinesManager = manager
         getHeadlines()
     }
     
+    //MARK:- Attching View
     func attach(view: HeadlinesViewType) {
         self.headlinesView = view
     }
     
+    //MARK:- Method to get Headlines by API call
     func getHeadlines() {
         let request : [String: Any] = [:]
         let additionalQuery: [String: String] = [:]
@@ -45,6 +49,7 @@ class HeadlinesViewModel:  HeadlinesViewModelType {
             }).disposed(by: disposeBag)
     }
     
+    //MARK:- Method to fetch data of selected cell
     func headlineSelected(index: Int) {
         guard let selectedArticle = headlinesMapperModel?.articles[index], let naviagteToURL = selectedArticle.url, let view = self.headlinesView else {
             return

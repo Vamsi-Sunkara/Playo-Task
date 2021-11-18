@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class HeadlinesViewController: UIViewController, HeadlinesViewType {
-
+    
     @IBOutlet weak var headLinesTableView: UITableView!
     
     var viewModel: HeadlinesViewModelType = HeadlinesViewModel()
@@ -17,8 +17,7 @@ class HeadlinesViewController: UIViewController, HeadlinesViewType {
     override func viewDidLoad() {
         super.viewDidLoad()
         //MARK:- Attaching View with ViewModel
-        viewModel.attach(view: self.view)
+        viewModel.attach(view: self.view as! HeadlinesViewType)
     }
-
 
 }

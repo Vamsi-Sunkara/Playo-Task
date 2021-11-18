@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,21 @@
 		03155F0927465C3E00210751 /* HeadlinesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F0827465C3E00210751 /* HeadlinesProtocols.swift */; };
 		03155F1327465EDB00210751 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F1127465EDB00210751 /* NewsTableViewCell.swift */; };
 		03155F1427465EDB00210751 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03155F1227465EDB00210751 /* NewsTableViewCell.xib */; };
+		03155F252746692100210751 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F242746692100210751 /* API.swift */; };
+		03155F2A27466A3400210751 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F2927466A3400210751 /* HTTP.swift */; };
+		03155F2F27466C7900210751 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F2E27466C7900210751 /* NetworkManager.swift */; };
+		03155F3B27466D3300210751 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F3A27466D3300210751 /* Alamofire */; };
+		03155F412746708100210751 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F402746708100210751 /* RxSwift */; };
+		03155F432746708100210751 /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F422746708100210751 /* RxTest */; };
+		03155F452746708100210751 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F442746708100210751 /* RxRelay */; };
+		03155F472746708100210751 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F462746708100210751 /* RxCocoa */; };
+		03155F492746708100210751 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 03155F482746708100210751 /* RxBlocking */; };
+		03155F5127467CA800210751 /* HeadlinesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F5027467CA800210751 /* HeadlinesRouter.swift */; };
+		03155F6127467CCD00210751 /* HeadlinesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F6027467CCD00210751 /* HeadlinesManager.swift */; };
+		03155F6627467CFD00210751 /* CommonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F6527467CFD00210751 /* CommonManager.swift */; };
+		03155F6B27467DA300210751 /* HeadlinesUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F6A27467DA300210751 /* HeadlinesUsecase.swift */; };
+		03155F7027467E2200210751 /* HeadlinesMapperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F6F27467E2200210751 /* HeadlinesMapperModel.swift */; };
+		03155F752746814E00210751 /* HeadlinesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03155F742746814E00210751 /* HeadlinesResponseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +74,15 @@
 		03155F0827465C3E00210751 /* HeadlinesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesProtocols.swift; sourceTree = "<group>"; };
 		03155F1127465EDB00210751 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		03155F1227465EDB00210751 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		03155F242746692100210751 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		03155F2927466A3400210751 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		03155F2E27466C7900210751 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		03155F5027467CA800210751 /* HeadlinesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesRouter.swift; sourceTree = "<group>"; };
+		03155F6027467CCD00210751 /* HeadlinesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesManager.swift; sourceTree = "<group>"; };
+		03155F6527467CFD00210751 /* CommonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonManager.swift; sourceTree = "<group>"; };
+		03155F6A27467DA300210751 /* HeadlinesUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesUsecase.swift; sourceTree = "<group>"; };
+		03155F6F27467E2200210751 /* HeadlinesMapperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesMapperModel.swift; sourceTree = "<group>"; };
+		03155F742746814E00210751 /* HeadlinesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlinesResponseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03155F412746708100210751 /* RxSwift in Frameworks */,
+				03155F492746708100210751 /* RxBlocking in Frameworks */,
+				03155F432746708100210751 /* RxTest in Frameworks */,
+				03155F472746708100210751 /* RxCocoa in Frameworks */,
+				03155F452746708100210751 /* RxRelay in Frameworks */,
+				03155F3B27466D3300210751 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +141,10 @@
 			children = (
 				03155EC42746596E00210751 /* AppDelegate.swift */,
 				03155EC62746596E00210751 /* SceneDelegate.swift */,
-				03155EFF27465C0B00210751 /* Headlines */,
-				03155ECA2746596E00210751 /* Main.storyboard */,
+				03155F1D274663FC00210751 /* App */,
+				03155F1F2746641D00210751 /* Data */,
+				03155F1E2746641300210751 /* Domain */,
+				03155F222746677C00210751 /* Supporting Managers */,
 				03155ED02746597000210751 /* Assets.xcassets */,
 				03155ED22746597000210751 /* LaunchScreen.storyboard */,
 				03155ED52746597000210751 /* Info.plist */,
@@ -159,6 +191,93 @@
 			path = "News Cell";
 			sourceTree = "<group>";
 		};
+		03155F1D274663FC00210751 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				03155ECA2746596E00210751 /* Main.storyboard */,
+				03155EFF27465C0B00210751 /* Headlines */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		03155F1E2746641300210751 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				03155F4E27467C3300210751 /* Repository */,
+				03155F4F27467C5C00210751 /* Routers */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		03155F1F2746641D00210751 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				03155F4D27467BEB00210751 /* ResponseModels */,
+				03155F21274665DC00210751 /* MapperModels */,
+				03155F20274665AF00210751 /* UseCase */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		03155F20274665AF00210751 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				03155F6A27467DA300210751 /* HeadlinesUsecase.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		03155F21274665DC00210751 /* MapperModels */ = {
+			isa = PBXGroup;
+			children = (
+				03155F6F27467E2200210751 /* HeadlinesMapperModel.swift */,
+			);
+			path = MapperModels;
+			sourceTree = "<group>";
+		};
+		03155F222746677C00210751 /* Supporting Managers */ = {
+			isa = PBXGroup;
+			children = (
+				03155F232746679900210751 /* Network */,
+			);
+			path = "Supporting Managers";
+			sourceTree = "<group>";
+		};
+		03155F232746679900210751 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				03155F2E27466C7900210751 /* NetworkManager.swift */,
+				03155F2927466A3400210751 /* HTTP.swift */,
+				03155F242746692100210751 /* API.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		03155F4D27467BEB00210751 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				03155F742746814E00210751 /* HeadlinesResponseModel.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		03155F4E27467C3300210751 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				03155F6027467CCD00210751 /* HeadlinesManager.swift */,
+				03155F6527467CFD00210751 /* CommonManager.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		03155F4F27467C5C00210751 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				03155F5027467CA800210751 /* HeadlinesRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,6 +294,14 @@
 			dependencies = (
 			);
 			name = "Playo Task";
+			packageProductDependencies = (
+				03155F3A27466D3300210751 /* Alamofire */,
+				03155F402746708100210751 /* RxSwift */,
+				03155F422746708100210751 /* RxTest */,
+				03155F442746708100210751 /* RxRelay */,
+				03155F462746708100210751 /* RxCocoa */,
+				03155F482746708100210751 /* RxBlocking */,
+			);
 			productName = "Playo Task";
 			productReference = 03155EC12746596E00210751 /* Playo Task.app */;
 			productType = "com.apple.product-type.application";
@@ -246,6 +373,10 @@
 				Base,
 			);
 			mainGroup = 03155EB82746596E00210751;
+			packageReferences = (
+				03155F3927466D3300210751 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 03155EC22746596E00210751 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,12 +421,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03155F2A27466A3400210751 /* HTTP.swift in Sources */,
+				03155F6B27467DA300210751 /* HeadlinesUsecase.swift in Sources */,
+				03155F6627467CFD00210751 /* CommonManager.swift in Sources */,
+				03155F6127467CCD00210751 /* HeadlinesManager.swift in Sources */,
+				03155F752746814E00210751 /* HeadlinesResponseModel.swift in Sources */,
 				03155EFB27465BA400210751 /* HeadlinesViewController.swift in Sources */,
+				03155F2F27466C7900210751 /* NetworkManager.swift in Sources */,
 				03155F1327465EDB00210751 /* NewsTableViewCell.swift in Sources */,
+				03155F7027467E2200210751 /* HeadlinesMapperModel.swift in Sources */,
+				03155F5127467CA800210751 /* HeadlinesRouter.swift in Sources */,
 				03155F0927465C3E00210751 /* HeadlinesProtocols.swift in Sources */,
 				03155EC52746596E00210751 /* AppDelegate.swift in Sources */,
 				03155ECF2746596E00210751 /* Playo_Task.xcdatamodeld in Sources */,
 				03155F0127465C2900210751 /* HeadlinesViewModel.swift in Sources */,
+				03155F252746692100210751 /* API.swift in Sources */,
 				03155EC72746596E00210751 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,6 +769,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03155F3927466D3300210751 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+		03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03155F3A27466D3300210751 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03155F3927466D3300210751 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		03155F402746708100210751 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		03155F422746708100210751 /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		03155F442746708100210751 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		03155F462746708100210751 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		03155F482746708100210751 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03155F3F2746708100210751 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		03155ECD2746596E00210751 /* Playo_Task.xcdatamodeld */ = {
